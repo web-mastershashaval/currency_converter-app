@@ -46,7 +46,7 @@ class _CurrencyConverterMaterialState extends State<CurrencyConverterMaterial> {
           crossAxisAlignment: CrossAxisAlignment.center, 
           children: [
             Text(
-              result.toStringAsFixed(2), // Formats result to 2 decimal places
+              'Ksh ${result.toStringAsFixed(2)}', // Formats result to 2 decimal places
               style: const TextStyle(
                 fontSize: 55,
                 fontWeight: FontWeight.bold,
@@ -60,7 +60,7 @@ class _CurrencyConverterMaterialState extends State<CurrencyConverterMaterial> {
                 controller: textEditingController,
                 style: const TextStyle(color: Colors.black),
                 decoration: const InputDecoration(
-                  hintText: 'Please enter the amount in Ksh',
+                  hintText: 'Please enter the amount in dollars',
                   hintStyle: TextStyle(color: Colors.black),
                   prefixIcon: Icon(Icons.monetization_on),
                   filled: true,
